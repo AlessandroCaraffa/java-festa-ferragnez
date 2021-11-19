@@ -21,7 +21,16 @@ public class CheckGuest {
 		
 		boolean nomeCorretto = false;
 		
-		for (int i=0 ;i< listaInvitati.length;i++) {
+//		for (int i=0 ;i< listaInvitati.length ;i++) {
+//			if (listaInvitati[i].equals(guestName)) {
+//				nomeCorretto = true;
+//				break;
+//			}
+//		}
+		
+		int i = 0;
+		while (i < listaInvitati.length -1) {
+			i++;
 			if (listaInvitati[i].equals(guestName)) {
 				nomeCorretto = true;
 				break;
