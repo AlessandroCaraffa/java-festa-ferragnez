@@ -18,10 +18,20 @@ public class CheckGuest {
 		System.out.println("Inserite il vostro nome per l'identificazione: ");
 		String guestName = scanner1.nextLine(); 
 		System.out.println("Nome inserito: " + guestName);
-		
+		guestName = guestName.toLowerCase();
 		
 		boolean nomeCorretto = false;
-
+		String listaMinuscolo = new String();
+		
+		
+//		for creato per far funzionare il programma indipendentemente se il nome viene scritto in maiuscolo o minuscolo
+		for (int i =0 ;i < listaInvitati.length; i++) {
+			listaMinuscolo = listaInvitati [i];
+			
+			listaMinuscolo = listaMinuscolo.toLowerCase();
+			 listaInvitati[i] = listaMinuscolo ;
+			
+			}
 		
 //		metodo 1
 //		for (int i=0 ;i< listaInvitati.length ;i++) {
