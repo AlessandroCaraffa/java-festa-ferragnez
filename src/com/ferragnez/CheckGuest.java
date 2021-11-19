@@ -25,16 +25,17 @@ public class CheckGuest {
 		
 		
 //		for creato per far funzionare il programma indipendentemente se il nome viene scritto in maiuscolo o minuscolo
-		for (int i =0 ;i < listaInvitati.length; i++) {
-			listaMinuscolo = listaInvitati [i];
-			
-			listaMinuscolo = listaMinuscolo.toLowerCase();
-			 listaInvitati[i] = listaMinuscolo ;
-			
-			}
+//		for (int i =0 ;i < listaInvitati.length; i++) {
+//			listaMinuscolo = listaInvitati [i];
+//			listaMinuscolo = listaMinuscolo.toLowerCase();
+//			listaInvitati[i] = listaMinuscolo ;
+//			}
 		
 //		metodo 1
 //		for (int i=0 ;i< listaInvitati.length ;i++) {
+//			listaMinuscolo = listaInvitati [i];
+//			listaMinuscolo = listaMinuscolo.toLowerCase();
+//			listaInvitati[i] = listaMinuscolo ;
 //			if (listaInvitati[i].equals(guestName)) {
 //				nomeCorretto = true;
 //				break;
@@ -47,7 +48,9 @@ public class CheckGuest {
 //		metodo2
 		int i = 0;
 		while (i < listaInvitati.length) {
-			
+		listaMinuscolo = listaInvitati [i];
+		listaMinuscolo = listaMinuscolo.toLowerCase();
+		listaInvitati[i] = listaMinuscolo ;
 			if (listaInvitati[i].equals(guestName)) {
 				nomeCorretto = true;
 				
