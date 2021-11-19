@@ -19,24 +19,21 @@ public class CheckGuest {
 		String guestName = scanner1.nextLine();
 		System.out.println("Nome inserito: " + guestName);
 		
-//		boolean nomeCorretto = false;
-		String  nomeInvitato =new String();
+		boolean nomeCorretto = false;
 		
 		for (int i=0 ;i< listaInvitati.length;i++) {
-			if (listaInvitati[i] == guestName) {
-				listaInvitati [i] = nomeInvitato;
-//				nomeCorretto = true;
+			if (listaInvitati[i].equals(guestName)) {
+				nomeCorretto = true;
 				break;
 			}
 		}
 		
 		
-		if (nomeInvitato == guestName) {
+		if (nomeCorretto) {
 			System.out.println("Puoi entrare");
 		}else {
 			System.out.println("Non puoi entrare");
 		}
-		System.out.println(nomeInvitato);
 		scanner1.close();
 		
 
